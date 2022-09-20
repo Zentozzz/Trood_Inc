@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface colorParam {
+export interface colorParam {
   id: number | null;
   status: string | null;
   bgColorDie: string | null;
   bgColorSign: string | null;
 }
 
-interface bgColor {
+export interface bgColor {
   color: [
     {
       id: number | null;

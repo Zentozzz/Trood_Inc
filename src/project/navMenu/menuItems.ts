@@ -1,9 +1,5 @@
 export const menuItems = [
   {
-    id: 0,
-    text: "Project",
-  },
-  {
     id: 1,
     text: "Token Type",
   },

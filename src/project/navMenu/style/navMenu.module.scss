@@ -9,7 +9,57 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     max-width: 1300px;
+    .position {
+      position: relative;
+      .popup {
+        position: absolute;
+        left: -1em;
+        top: 4em;
+        max-width: 192px;
+        width: 100px;
+        max-height: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1em;
+        box-shadow: 0px 0px 15px -5px rgb(190, 190, 190);
+        padding: 0 10px;
+        visibility: hidden;
+        transition: 0.2s;
+        opacity: 0;
+        &.visible {
+          visibility: visible;
+          top: 2em;
+          opacity: 1;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          .all {
+            background-color: #eeeeee;
+          }
+          .green {
+            background-color: #e7fced;
+          }
+          .yellow {
+            background-color: #fcffda;
+          }
+          .red {
+            background-color: #ffe8e8;
+          }
+          li {
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            p {
+              font-weight: 500;
+              padding: 0.25em 0;
+            }
+          }
+        }
+      }
+    }
     .obj {
+      cursor: pointer;
       p {
         font-weight: 500;
         color: #9a9da2;

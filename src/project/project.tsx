@@ -1,8 +1,9 @@
 import React from "react";
 import { UseAppSelector, UseAppDispatch } from "../redux/hooks";
+import { setBgColor } from "../redux/slice/bgColorSlice";
 import { useLocation } from "react-router-dom";
 
-import { setBgColor } from "../redux/slice/bgColorSlice";
+import type { colorParam } from "../redux/slice/bgColorSlice";
 
 import { NavMenu } from "./navMenu/navMenu";
 
@@ -29,9 +30,8 @@ export function Project() {
     setLoading(true);
   }, [location.pathname, dispatch]);
 
-  const bg: any = UseAppSelector((state) => state.bgColorSlice.color);
+  const bg: [colorParam] = UseAppSelector((state) => state.bgColorSlice.color);
   console.log(loading);
-  // bg.map((color: any) => console.log(color.bgColorDie));
 
   return (
     <>
