@@ -1,0 +1,19 @@
+.navMenu {
+  max-width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 1300px;
+    .obj {
+      p {
+        font-weight: 500;
+        color: #9a9da2;
+      }
+    }
+  }
+}

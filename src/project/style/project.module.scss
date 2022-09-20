@@ -1,0 +1,58 @@
+.project {
+  margin: 0 auto;
+  max-width: 1400px;
+  .table {
+    display: flex;
+    flex-direction: column;
+    .die {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2fef3;
+      margin: 10px 0;
+      border-radius: 16px;
+      padding: 1em;
+      .gridElement {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 1300px;
+
+        p {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        .name {
+          display: flex;
+          align-items: center;
+          .sign {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            border: 1px solid #20202038;
+          }
+        }
+      }
+      .buy {
+        border: 1px solid #bd1abf;
+        border-radius: 8px;
+        transition: 0.2s;
+        cursor: pointer;
+        p {
+          color: #bd1abf;
+          padding: 0.5em 1em;
+          font-weight: 600;
+        }
+        &:hover {
+          background-color: #bd1abf;
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
